@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConsulApp</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <script src="https://use.fontawesome.com/31aeab9e7f.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-1">
+            <header>
+                <nav>
+                    <img src="https://placehold.co/50" alt="logo" />
+                    <h1>ConsulApp</h1>
+                </nav>
+            </header>
+        </div>
+        <div class="grid-2">
+            <aside>
+                <nav class="nav2">
+                    <button class="btnOpciones" onclick="desplegar()">Opciones</button>
+
+                    <label id="labelAside">DEPARTAMENTO</label>
+                </nav>
+                <div id="listEmpleados">
+                    <div>
+                        <ul id="listaDepartaments" hidden></ul>
+                    </div>
+                    <table id="baseAddEmpleado">
+                        <!--<td class="infoEmpleado" >
+                            <div>
+                                <img class="perfilEmpleado" src="https://placehold.co/50" alt="perfilEmpleado" />
+                            </div>
+                            <div class="nombreInfoEmpleado">
+                                <strong id="nombreEmpleado">Carlos Alfredo Montes Vergara</strong>
+                                <div>
+                                    <strong id="labelProyects">Proyectos: </strong>
+                                    <label id="numeroProyects">43464654</label>
+                                </div>
+                            </div>
+                            <div>
+                                <label id="descriptionEmpleado">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quam iure quae amet nam maxime libero, quod, ad illo dolor
+                                    enim nobis nisi sed est consequatur nostrum iusto? Nihil,
+                                    illum ea?</label>
+                            </div>
+                            <div id="btnBorrarEmpleado">
+                                <i class="fa fa-trash button"></i>
+                            </div>
+                        </td>-->
+                        <td class="infoEmpleado" id="templateAddEmpleado">
+                            <div>
+                                <input type="file" hidden id="fileReader" />
+                                <img id="imgOppenedFileReader" class="perfilEmpleado" src="https://placehold.co/50"
+                                    alt="perfilEmpleado" onclick="openfilereader()" />
+                            </div>
+                            <div class="nombreInfoEmpleado">
+                                <input type="text" placeholder="Nombre" id="capterNombre" />
+                                <div>
+                                    <strong id="labelProyects">Proyectos: </strong>
+                                    <input type="tel" placeholder="###" id="capterNumProyects" />
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Descripcion" id="capterDescription" />
+                                <select name="" id="selectDepartCreation">
+                                    <option value="Departamentos" disabled selected>
+                                        Departamentos
+                                    </option>
+                                </select>
+                            </div>
+                        </td>
+                    </table>
+                </div>
+                <div id="footerAside">
+                    <div class="inputNewDepartament">
+                        <input type="text" name="" id="inputAceptDepart" placehold="Escriba Aqui" hidden />
+                        <button id="btnAceptDepart" class="btnFooterAside" onclick="aceptDepart()" hidden>
+                            Aceptar
+                        </button>
+                    </div>
+
+                    <button id="btnAddDepart" class="btnFooterAside" onclick="addDepart()">
+                        Add Departamento
+                    </button>
+                    <button id="btnAddEmpleado" class="btnFooterAside" onclick="addEmpleado()">
+                        Add Empleado
+                    </button>
+                    <button id="btnCreateEmpleado" class="btnFooterAside" onclick="createEmpleado()">
+                        Aceptar
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <div class="grid-3">
+            <main>
+                
+                <div class="divMain1">
+                    <button id="btnAddProject" class="btnOpciones3" onclick="newProject()">Nuevo</button>
+                    <div id="capterInfoProyect">
+                        <input class="capter" type="text" name="" id="inpNProject" placeholder="Nombre de Proyecto">
+                        <input class="capter" type="text" name="" id="inpDProject" placeholder="Descripcion de Proyecto">
+                        <input class="capter" type="text" name="" id="inpEProject" placeholder="Empleados">
+                        <input class="capter" type="text" name="" id="inpSProject" placeholder="Empleados">
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div>
+                    <table id="tableProjects">
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Empleados</th>
+                            <th>Estado</th>
+                            <th>Ver</th>
+                            <th>Opciones</th>
+                        </tr>
+                        <tr class="itemProyect">
+                            <td id="nomProject">Web Page</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sit iste reprehenderit optio porro, itaque modi quisquam tempora at, quia illo facere vitae ducimus rem, reiciendis expedita labore magnam pariatur.</td>
+                            <td>56</td>
+                            <td>en curso</td>
+                            <td>
+                                <button>ver</button>
+                            </td>
+                            <td>
+                                <button class="btnOps">Agregar Empleado</button>
+                                <button class="btnOps">Eliminar Empleado</button>
+                                <button class="btnOps">Finalizar Proyecto</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script type="text/javascript" src="public/js/script.js"></script>
+</body>
+
+</html>

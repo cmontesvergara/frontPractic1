@@ -1,0 +1,25 @@
+{
+  "name": "frontpractic1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmontesvergara/frontPractic1.git"
+  },
+  "author": "cmontesvergara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmontesvergara/frontPractic1/issues"
+  },
+  "homepage": "https://github.com/cmontesvergara/frontPractic1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  }
+}
